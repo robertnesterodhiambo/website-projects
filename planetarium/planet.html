@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planetarium Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-D5n/+RSu0D0+7U0i0Cz9xFl/2Hl8ZkmBb3JYKPqjgLQKsScnIRL5X54MG8utLNZ8eUI16yrXhLHyYFjguoAupw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-white rounded">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Planetarium</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#events">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container mt-5 shadow p-3 mb-5 bg-white rounded">
+    <!-- Images -->
+    <div class="row">
+      <div class="col-md-4">
+        <img src="image1.jpg" class="img-fluid shadow p-3 mb-5 bg-white rounded" alt="Image 1">
+      </div>
+      <div class="col-md-4">
+        <img src="image2.jpg" class="img-fluid shadow p-3 mb-5 bg-white rounded" alt="Image 2">
+      </div>
+      <div class="col-md-4">
+        <img src="image3.jpg" class="img-fluid shadow p-3 mb-5 bg-white rounded" alt="Image 3">
+      </div>
+    </div>
+
+<!-- Event Reservation Form -->
+<div id="events" class="mt-5">
+    <h2 class="shadow p-3 mb-5 bg-white rounded"> Event Reservation</h2>
+    <form class="shadow p-3 mb-5 bg-white rounded">
+      <div class="row">
+        <div class="col-md-6">
+          <input type="text" class="form-control mb-3" placeholder="First Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control mb-3" placeholder="Last Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control mb-3" placeholder="Email" required>
+        </div>
+        <div class="col-md-6">
+          <input type="date" class="form-control mb-3" required>
+        </div>
+        <div class="col-md-12">
+          <select class="form-select mb-3" required>
+            <option selected disabled>Select Event Type</option>
+            <option value="school">School Event</option>
+            <option value="holiday">Holiday Party</option>
+            <option value="work">Work Event</option>
+            <option value="christmas">Christmas Party</option>
+          </select>
+        </div>
+        <div class="col-md-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+
+    <!-- Planetarium Information -->
+    <div id="about" class="mt-5 shadow p-3 mb-5 bg-white rounded">
+      <div class="container">
+          <!-- About the Planetarium -->
+  <section id="about">
+    <h1>About the Planetarium</h1>
+    <p>The Planetarium is a celestial wonderland, where visitors embark on a journey through the cosmos, exploring the mysteries of the universe. Established in 1965, our planetarium has a rich history of educating and inspiring generations of stargazers.</p>
+  </section>
+
+  <!-- History -->
+  <section id="history">
+    <h2>History</h2>
+    <p>Our planetarium was founded by renowned astrophysicist Dr. John Smith, who envisioned a place where people of all ages could learn about astronomy in an immersive and engaging way. Dr. Smith's passion for space exploration fueled the creation of our state-of-the-art facility, which has since become a beacon of scientific discovery.</p>
+    <p>Over the years, the planetarium has undergone several renovations and expansions, each aimed at enhancing the visitor experience and incorporating the latest advancements in technology. Today, we proudly stand as one of the leading planetariums in the world, attracting visitors from near and far.</p>
+  </section>
+
+  <!-- Unique Features -->
+  <section id="unique">
+    <h2>Unique Features</h2>
+    <p>What sets our planetarium apart is not just its cutting-edge equipment or stunning visuals, but the immersive experiences we offer to our visitors. From our state-of-the-art dome theater to our interactive exhibits, every aspect of the planetarium is designed to ignite curiosity and foster a deeper understanding of the cosmos.</p>
+    <p>One of our most unique features is our live star shows, where expert astronomers guide visitors on a virtual tour of the night sky. Using our advanced projection technology, guests can witness the beauty of distant galaxies, nebulae, and stars, all from the comfort of their seats.</p>
+    <p>In addition to our star shows, we also host a variety of special events, workshops, and lectures, providing visitors with opportunities to engage with leading experts in the field of astronomy. Whether you're a seasoned astronomer or a curious novice, there's something for everyone at our planetarium.</p>
+  </section>
+
+  <!-- What We Show -->
+  <section id="shows">
+    <h2>What We Show</h2>
+    <p>At the heart of our planetarium are our awe-inspiring shows, which take audiences on unforgettable journeys to the far reaches of the universe. From captivating documentaries to thrilling laser light shows, we offer a diverse range of programming that appeals to all ages and interests.</p>
+    <p>One of our most popular shows is "Journey to the Stars," a breathtaking exploration of the birth and evolution of stars. Narrated by a renowned astrophysicist, this show combines stunning visuals with cutting-edge scientific research to bring the wonders of the cosmos to life.</p>
+    <p>For younger audiences, we offer interactive shows like "Planet Explorers," where children can embark on a virtual voyage to explore the planets of our solar system. With engaging storytelling and hands-on activities, these shows inspire a love of learning and discovery.</p>
+  </section>
+
+        </div>
+      </div>
+    </div>
+
+<!-- Contact Info -->
+<div id="contact" class="mt-5">
+    <h2>Contact</h2>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+      <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+      <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+    </ul>
+  </div>
+  
+  
+
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
