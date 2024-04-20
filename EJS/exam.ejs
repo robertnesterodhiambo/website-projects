@@ -1,0 +1,97 @@
+<!-- exam.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FDA Food Events</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            font-size: 24px;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="retrieveData()">Retrieve Data</button>
+    <div id="dataContainer"></div>
+
+    <script>
+        async function retrieveData() {
+            try {
+                const response = await fetch('/data');
+                const data = await response.json();
+
+                // Process data and display it on the page
+                displayData(data);
+            } catch (error) {
+                console.error('Error retrieving data:', error);
+            }
+        }
+
+        function displayData(data) {
+            const dataContainer = document.getElementById('dataContainer');
+            dataContainer.innerHTML = ''; // Clear previous data
+
+            const table = document.createElement('table');
+            const headerRow = table.insertRow();
+            const header1 = document.createElement('th');
+            header1.textContent = 'Product Name';
+            headerRow.appendChild(header1);
+            const header2 = document.createElement('th');
+            header2.textContent = 'Reactions';
+            headerRow.appendChild(header2);
+
+            data.forEach(entry => {
+                const productName = entry.products[0].name_brand;
+                const reactions = entry.reactions.join(', ');
+
+                const row = table.insertRow();
+                const cell1 = row.insertCell();
+                cell1.textContent = productName;
+                const cell2 = row.insertCell();
+                cell2.textContent = reactions;
+            });
+
+            dataContainer.appendChild(table);
+        }
+    </script>
+</body>
+</html>

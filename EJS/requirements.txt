@@ -1,0 +1,8 @@
+sudo apt install nodejs npm
+npm install axios@0.27.2
+npm install express body-parser morgan helmet validator jsonwebtoken mongoose dotenv
+
+ ensure the installation is in the folder where the files are so that it runs.
+ note the axios version
+ ensure all files ar ein the same folder
+use node app.js to run the file 
