@@ -3,81 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Objectify - Objecting Unethical Practices</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="bg-dark text-white text-center py-3">
-        <h1>Welcome to My Website</h1>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">My Website</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#signup">Sign Up</a></li>
-                    </ul>
-                </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Objectify</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../object_web/signup-form/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../object_web/signup-form/login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../object_web/signup-form/signup.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
 
-    <section id="home" class="container my-5">
-        <h2>Home</h2>
-        <p>Welcome to the home page!</p>
-    </section>
+    <main role="main">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Objectify</h1>
+                <p class="lead text-muted">A platform to publicly express objection to unethical practices.</p>
+                <p>
+                    <a href="#" class="btn btn-primary my-2">Learn More</a>
+                    <a href="#" class="btn btn-secondary my-2">Get Involved</a>
+                </p>
+            </div>
+        </section>
 
-    <section id="about" class="container my-5">
-        <h2>About</h2>
-        <p>This is the about section.</p>
-    </section>
-
-    <section id="signup" class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-header">
-                        <h2>Signup Form</h2>
-                    </div>
-                    <div class="card-body">
-                        <form id="signup-form">
-                            <div class="form-group">
-                                <label for="username">Username:</label>
-                                <input type="text" class="form-control" id="username" name="username" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email:</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Password:</label>
-                                <input type="password" class="form-control" id="password" name="password" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="usertype">User Type:</label>
-                                <select class="form-control" id="usertype" name="usertype" required>
-                                    <option value="user">User</option>
-                                    <option value="admin">Admin</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="btn btn-success btn-block">Sign Up</button>
-                        </form>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Tax Avoidance</h2>
+                    <p>Learn about how tax avoidance impacts communities and economies.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Unfair Employment Practices</h2>
+                    <p>Highlighting unfair labor practices and their consequences.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Racism</h2>
+                    <p>Raising awareness about racism and its effects on society.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
-    <!-- Bootstrap and jQuery JS -->
+    <footer class="text-muted text-center">
+        <div class="container">
+            <p>&copy; 2024 Objectify. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
