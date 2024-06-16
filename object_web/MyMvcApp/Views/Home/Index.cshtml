@@ -1,12 +1,49 @@
-﻿@* _Layout.cshtml (or create a new .cshtml file if not using layout) *@
+﻿@{
+    ViewData["Title"] = "Objectify - Objecting Unethical Practices";
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Objectify - Objecting Unethical Practices</title>
+    <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="~/css/styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Include your custom CSS file -->
+    <style>
+        /* Custom styles */
+        body {
+            background-color: #f0f0f0;
+        }
+        .jumbotron {
+            background-color: #343a40;
+            color: #ffffff;
+        }
+        .lead {
+            color: #ffffff;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0069d9;
+            border-color: #0062cc;
+        }
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+        .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,13 +58,13 @@
                         <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                        <a class="nav-link" href="@Url.Action("About", "Home")">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+                        <a class="nav-link" href="~/signup-form/login_converted.cshtml">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Register">Sign Up</a>
+                        <a class="nav-link" href="~/signup-form/signup_converted.cshtml">Sign Up</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a>

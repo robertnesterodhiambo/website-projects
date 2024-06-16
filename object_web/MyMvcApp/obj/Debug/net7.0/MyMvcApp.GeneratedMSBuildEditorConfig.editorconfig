@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/dragon/Git/website-projects/object_web/MyMvcApp
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/dragon/Git/website-projects/object_web/MyMvcApp/Views/Home/About_converted.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BYm91dF9jb252ZXJ0ZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/dragon/Git/website-projects/object_web/MyMvcApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
