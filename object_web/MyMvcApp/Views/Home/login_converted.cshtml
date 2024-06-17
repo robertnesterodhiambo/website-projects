@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0; /* Light gray background */
+    }
+    .login-form {
+        max-width: 400px;
+        padding: 30px;
+        background-color: #fff; /* White background */
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    }
+    .login-form h2 {
+        color: #007bff; /* Blue color */
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .form-control {
+        border-color: #007bff; /* Blue border */
+    }
+    .btn-primary {
+        background-color: #007bff; /* Blue background */
+        border-color: #007bff; /* Blue border */
+    }
+    .btn-primary:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+        border-color: #0056b3; /* Darker blue border on hover */
+    }
+    .navbar {
+        margin-bottom: 30px;
+    }
+    .navbar-nav .nav-link {
+        font-weight: bold;
+        color: #007bff; /* Blue color */
+    }
+    .navbar-nav .nav-link:hover {
+        color: #0056b3; /* Darker blue on hover */
+    }
+</style>
+</head>
+<body>
+<div class="login-form">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                 <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"  href="@Url.Action("Signup", "Home")">Sign Up</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h2 class="text-center">Login</h2>
+    <form id="loginForm">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
