@@ -1,36 +1,40 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net8.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net8.0": []
   },
   "packageFolders": {
-    "/home/dragon/.nuget/packages/": {}
+    "C:\\Users\\Dragon\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/dragon/Git/website-projects/object_web/MyMvcApp/MyMvcApp.csproj",
+      "projectUniqueName": "C:\\Users\\Dragon\\Desktop\\github\\github\\web\\website-projects\\object_web\\MyMvcApp\\MyMvcApp.csproj",
       "projectName": "MyMvcApp",
-      "projectPath": "/home/dragon/Git/website-projects/object_web/MyMvcApp/MyMvcApp.csproj",
-      "packagesPath": "/home/dragon/.nuget/packages/",
-      "outputPath": "/home/dragon/Git/website-projects/object_web/MyMvcApp/obj/",
+      "projectPath": "C:\\Users\\Dragon\\Desktop\\github\\github\\web\\website-projects\\object_web\\MyMvcApp\\MyMvcApp.csproj",
+      "packagesPath": "C:\\Users\\Dragon\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dragon\\Desktop\\github\\github\\web\\website-projects\\object_web\\MyMvcApp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/home/dragon/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Dragon\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net8.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -38,11 +42,16 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "imports": [
           "net461",
           "net462",
@@ -62,7 +71,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/244/sdk/7.0.409/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
