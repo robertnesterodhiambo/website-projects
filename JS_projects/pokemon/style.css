@@ -1,11 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    height: 100vh;
+    background-color: #f0f0f0;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    height: 100vh;
   }
   
   .container {
@@ -16,17 +16,25 @@ body {
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 320px; /* Adjust width to fit content */
+    text-align: center;
+  }
+  
+  .search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
   }
   
   input[type="number"] {
     padding: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Adjusted margin for spacing between input and button */
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 100%;
     font-size: 18px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensure padding and border are included in width */
   }
   
   button {
@@ -38,6 +46,7 @@ body {
     cursor: pointer;
     font-size: 18px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
   }
   
   button:hover {
@@ -46,17 +55,19 @@ body {
   
   .pokemon-card {
     display: none;
-    margin-top: 20px;
     text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    background: white;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .pokemon-card img {
     width: 150px;
     height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
   .pokemon-card h2 {
@@ -66,5 +77,16 @@ body {
   
   .pokemon-card p {
     margin: 5px 0;
+  }
+  
+  .pokemon-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3), 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .error {
+    color: red;
+    font-size: 18px;
+    margin-top: 20px;
   }
   

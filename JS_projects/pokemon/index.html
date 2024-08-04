@@ -8,9 +8,12 @@
 </head>
 <body>
   <div class="container">
-    <input type="number" id="numberInput" placeholder="Enter Pokémon ID" min="1">
-    <button onclick="searchPokemon()">Search</button>
+    <div class="search-section">
+      <input type="number" id="numberInput" placeholder="Enter Pokémon ID" min="1">
+      <button onclick="searchPokemon()">Search</button>
+    </div>
     <div id="pokemonCard" class="pokemon-card"></div>
+    <p id="error" class="error"></p>
   </div>
   <script src="script.js"></script>
 </body>
