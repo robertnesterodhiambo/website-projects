@@ -8,23 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Dragon\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/home/dragon/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dragon\\Desktop\\github\\github\\web\\website-projects\\object_web\\MyMvcApp\\MyMvcApp.csproj",
+      "projectUniqueName": "/home/dragon/Git/website-projects/object_web/MyMvcApp/MyMvcApp.csproj",
       "projectName": "MyMvcApp",
-      "projectPath": "C:\\Users\\Dragon\\Desktop\\github\\github\\web\\website-projects\\object_web\\MyMvcApp\\MyMvcApp.csproj",
-      "packagesPath": "C:\\Users\\Dragon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dragon\\Desktop\\github\\github\\web\\website-projects\\object_web\\MyMvcApp\\obj\\",
+      "projectPath": "/home/dragon/Git/website-projects/object_web/MyMvcApp/MyMvcApp.csproj",
+      "packagesPath": "/home/dragon/.nuget/packages/",
+      "outputPath": "/home/dragon/Git/website-projects/object_web/MyMvcApp/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Dragon\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/dragon/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -71,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
