@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/dragon/Git/website-projects/object_web/MyMvcApp/MyMvcApp.csproj": {}
+    "/home/dragon/GIT/website-projects/object_web/MyMvcApp/MyMvcApp.csproj": {}
   },
   "projects": {
-    "/home/dragon/Git/website-projects/object_web/MyMvcApp/MyMvcApp.csproj": {
+    "/home/dragon/GIT/website-projects/object_web/MyMvcApp/MyMvcApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/dragon/Git/website-projects/object_web/MyMvcApp/MyMvcApp.csproj",
+        "projectUniqueName": "/home/dragon/GIT/website-projects/object_web/MyMvcApp/MyMvcApp.csproj",
         "projectName": "MyMvcApp",
-        "projectPath": "/home/dragon/Git/website-projects/object_web/MyMvcApp/MyMvcApp.csproj",
+        "projectPath": "/home/dragon/GIT/website-projects/object_web/MyMvcApp/MyMvcApp.csproj",
         "packagesPath": "/home/dragon/.nuget/packages/",
-        "outputPath": "/home/dragon/Git/website-projects/object_web/MyMvcApp/obj/",
+        "outputPath": "/home/dragon/GIT/website-projects/object_web/MyMvcApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/dragon/.nuget/NuGet/NuGet.Config"
