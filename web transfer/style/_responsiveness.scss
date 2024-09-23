@@ -1,0 +1,409 @@
+@media only screen and (min-width: 1921px) {}
+
+@media only screen and (min-width: 1400px) and (max-width: 1920px) {}
+
+@media only screen and (max-width: 1400px) {
+    .width-80 {
+        width: 90%;
+    }
+    body {
+        font-size: 12px
+    }
+    .header-top {
+        ul {
+            &.contacts li {
+                padding-right: 15px;
+            }
+        }
+        .ctas .btn {
+            padding: 4px 35px;
+            font-size: 11px;
+        }
+    }
+    #mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-item>a.mega-menu-link {
+        padding: 0px 10px 0px 10px;
+        font-size: 11px;
+    }
+    #mega-menu-wrap-menu-1 #mega-menu-menu-1>li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link {
+        font-size: 11px;
+        line-height: 30px;
+    }
+    p {
+        font-size: 13px;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+    h2.title {
+        font-size: 35px;
+        margin: 20px 0px;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    .about {
+        padding: 50px 0px;
+    }
+    .btn {
+        font-size: 12px;
+    }
+    .home-news .card .card-body .card-title {
+        font-size: 16px;
+    }
+    .banner {
+        .page-title {
+            font-size: 35px;
+        }
+        .landing-img {
+            height: 220px;
+        }
+    }
+    .page-alternate2 .content h3 {
+        font-size: 20px;
+        margin: 15px 0px;
+    }
+    .drive {
+        .card {
+            padding: 5%;
+            .number {
+                width: 60px;
+                height: 60px;
+            }
+            h3 {
+                font-size: 18px;
+                padding-bottom: 15px;
+            }
+        }
+    }
+    .faqs .card .card-header h3 {
+        font-size: 16px;
+    }
+    .single-content {
+        .title-wrapper .page-title {
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .meta-data ul li {
+            padding: 0px 20px;
+            font-size: 12px;
+            &:first-child {
+                font-size: 12px;
+            }
+        }
+        .post-views.entry-meta>span {
+            font-size: 12px;
+        }
+    }
+    .phone .card ul li {
+        font-size: 16px;
+        color: #000;
+        a {
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1100px) {}
+
+@media only screen and (max-width: 1099px) {
+    .header-top {
+        display: none;
+    }
+    .header-top ul.social li {
+        padding-left: 10px;
+    }
+    .header {
+        .navbar {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+    .mission .card {
+        padding: 40px 5%;
+    }
+    .loans .card {
+        .card-body {
+            padding: 1rem;
+        }
+        h3 {
+            font-size: 14px;
+        }
+        .btn {
+            font-size: 11px;
+            border-radius: 15px;
+            padding: 4px 20px;
+        }
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    .contact-info {
+        .icon-wrapper {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 30px;
+        }
+        .btn {
+            width: 100%;
+            font-size: 10px;
+        }
+    }
+    .stats .card {
+        h2 {
+            padding-bottom: 10px;
+            font-size: 30px;
+        }
+        p {
+            margin-bottom: 40px;
+        }
+    }
+    .our-drive .col-md-3 .card {
+        padding: 20px;
+        h3 {
+            font-size: 18px;
+        }
+        h1 {
+            font-size: 40px;
+        }
+    }
+    h2.title {
+        font-size: 30px;
+        margin: 20px 0px;
+    }
+    .our-testimonials {
+        .card .card-text {
+            p {
+                font-size: 20px;
+            }
+            &:after {
+                position: absolute;
+                right: 0%;
+                bottom: 0px;
+                font-size: 25px;
+            }
+        }
+        .owl-carousel .owl-nav button.owl-prev,
+        .owl-carousel .owl-nav button.owl-next {
+            padding: 6px 20px !important;
+            font-size: 16px;
+        }
+        .owl-carousel .owl-nav button.owl-prev {
+            left: 0px;
+        }
+        iframe {
+            height: 400px;
+        }
+    }
+    .footer {
+        ul li a {
+            font-size: 14px;
+        }
+        .social li {
+            margin: 20px 5px;
+            a {
+                font-size: 14px;
+                line-height: 15px;
+                padding: 15px;
+            }
+        }
+    }
+    .page-alternate2 {
+        padding: 50px 0px;
+        .content {
+            width: 100%;
+            padding: 20px 0px 50px 0px;
+        }
+    }
+    .sidebar .title {
+        font-size: 18px;
+        padding-bottom: 15px;
+    }
+    .list2 li {
+        padding-bottom: 5px;
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+    .drive,
+    .flexible-banking,
+    .branches {
+        padding: 60px 10px;
+        .card {
+            padding: 7%;
+            .number {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+        }
+    }
+    .page-alternate {
+        padding: 40px 0px 60px 0px;
+        .content {
+            width: 80%;
+            margin: auto;
+            padding: 30px 0px;
+        }
+    }
+    .resources .card h3 {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .faqs .card .card-body {
+        padding: 5px 50px 5px 0px;
+        font-size: 20px;
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1200px) {}
+
+@media only screen and (max-width: 767px) {}
+
+@media only screen and (max-width: 500px) {
+    .landing .owl-carousel .owl-nav button.owl-prev,
+    .landing .owl-carousel .owl-nav button.owl-next {
+        display: none;
+    }
+    .scroll-down {
+        display: none;
+    }
+    .mission .card {
+        padding: 20px 5%;
+        .icon {
+            padding: 16px;
+            width: 60px;
+            height: 60px;
+        }
+    }
+    .about {
+        padding: 40px 5%;
+    }
+    h2.title {
+        font-size: 25px;
+        margin: 15px 0px;
+    }
+    .loans {
+        padding: 0px 5% 50px 5%;
+    }
+    .contact-info {
+        padding: 80px 0px;
+        .content {
+            padding-bottom: 20px;
+            h3 {
+                padding: 20px 0px;
+                line-height: 1.5;
+            }
+        }
+        .btn {
+            width: 100%;
+            font-size: 12px;
+        }
+    }
+    .stats {
+        padding: 50px 5% 50px 5%;
+        .card p {
+            font-size: 16px;
+        }
+    }
+    .our-drive {
+        .col-md-3 {
+            &:first-child .card {
+                padding: 20% 20px;
+            }
+        }
+    }
+    .our-testimonials .owl-carousel .owl-nav button.owl-next {
+        right: 0px;
+    }
+    .home-news .owl-dots {
+        bottom: -12%;
+    }
+    .offset-1 {
+        margin-left: 0%;
+    }
+    .footer {
+        padding: 60px 0px 20px 0px;
+        h3 {
+            margin-top: 30px;
+        }
+    }
+    .row {
+        max-width: 100%;
+        margin: auto;
+    }
+    .banner {
+        .page-title {
+            font-size: 24px;
+        }
+        .landing-img {
+            height: 150px;
+        }
+        .breadcrumbs {
+            font-size: 14px;
+        }
+    }
+    .drive,
+    .flexible-banking,
+    .branches {
+        .card {
+            padding: 10% 7%;
+        }
+    }
+    .faqs .card {
+        padding: 20px 0px 20px 0px;
+        .card-header {
+            padding-right: 20px;
+            h3 {
+                font-size: 14px;
+                width: 90%;
+            }
+            span {
+                width: 40px;
+                height: 100%;
+            }
+        }
+    }
+    .page-alternate .content {
+        width: 90%;
+    }
+    .single-content .title-wrapper .page-title {
+        font-size: 18px;
+    }
+    .single-content .meta-data ul {
+        padding: 1px 0px 15px 0px;
+        li {
+            padding: 0px 10px;
+            font-size: 10px;
+        }
+    }
+    .single-content .post-views.entry-meta>span {
+        font-size: 10px;
+    }
+    .single-content .meta-data ul li:first-child {
+        font-size: 10px;
+    }
+    .single-content .side-bar {
+        padding: 50px 0px;
+    }
+    .single-content .col-md-3.border-left {
+        border-left: 0px solid #dee2e6!important;
+    }
+    .contacts-us .form-wrapper {
+        padding: 20px;
+        .form-control {
+            padding: 20px 20px 20px 20px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {}
+
+@media only screen and (max-width: 380px) {}
