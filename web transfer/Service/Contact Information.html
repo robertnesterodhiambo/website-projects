@@ -191,7 +191,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 </li>
 </ul>
 </li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-69' id='mega-menu-item-69'>
-    <a class="mega-menu-link" href="/Service/carreers.html" aria-haspopup="true" aria-expanded="false" tabindex="0">Carreers<span class="mega-indicator">
+    <a class="mega-menu-link" href="/Service/carreers.html" aria-haspopup="true" aria-expanded="false" tabindex="0">Careers<span class="mega-indicator">
 
     </span>
 </a>
@@ -235,7 +235,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <div class="wpcf7 no-js" id="wpcf7-f5-o1" lang="en-US" dir="ltr">
 <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
 
-<form action="" id="myForm" method="" class="" aria-label="Contact form" novalidate="novalidate" data-status="init">
+<form action="" id="myFormS" method="" class="" aria-label="Contact form" novalidate="novalidate" data-status="init">
 <div style="display: none;">
 <input type="hidden" name="_wpcf7" value="5" />
 <input type="hidden" name="_wpcf7_version" value="5.8" />
@@ -276,11 +276,35 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 </div><div class="wpcf7-response-output" aria-hidden="true"></div>
 </form>
 <script>
-    document.getElementById('myForm').addEventListener('submit', function(event) {
+    document.getElementById('myFormS').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent default form submission
-        window.location.href = "/index.html"; // Redirect to the specified page
+
+        // Collect form data
+        const name = document.getElementById('fname').value;
+        const email = document.getElementById('yemail').value;
+        const phone = document.getElementById('phone').value;
+        const message = document.getElementById('message').value;
+
+        // Build the mailto URL
+        const mailto = `mailto:keystonedtsacco@gmail.com?subject=New Contact Form Submission&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0APhone: ${encodeURIComponent(phone)}%0AMessage: ${encodeURIComponent(message)}`;
+
+        // Create a temporary link element
+        const tempLink = document.createElement('a');
+        tempLink.href = mailto;
+        tempLink.target = '_blank'; // Open in new tab
+
+        // Append the link to the body (required to trigger the click in some browsers)
+        document.body.appendChild(tempLink);
+
+        // Simulate a click on the link
+        tempLink.click();
+
+        // Remove the temporary link
+        document.body.removeChild(tempLink);
     });
 </script>
+
+
 </div>
                 </div>
                 <ul class="social">
