@@ -213,6 +213,54 @@
         <button type="button">Add another conviction</button>
     </form>
 </section>
+
+
+<!--Education-->
+
+
+<section id="education">
+    <h2>education</h2>
+    <form>
+        <label>
+            <input type="checkbox" id="convicted">
+           Do you want to add education background?
+        </label>
+        <div class="row">
+            <div class="col">
+                <label for="start-date">Graduation Date:</label>
+                <input type="date" id="start-date">
+            </div>
+            <div class="col">
+                <label for="misdemeanor-felony">School Type:</label>
+                <select id="misdemeanor-felony">
+                    <option value="none">College</option>
+                    <option value="misdemeanor">Highscool</option>
+                    <option value="felony"></option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="description">School Name:</label>
+                <input type="text" id="description" placeholder="Description">
+            </div>
+
+            <div class="col">
+                <label for="confinement">State:</label>
+                <select id="confinement">
+                    <option value="none">Ohio</option>
+                    <option value="confinement">Newyork</option>
+                </select>
+            </div>
+            
+            <div class="col">
+                <label for="months-years">Majors:</label>
+                <input type="text" id="months-years" placeholder="Months/Years">
+            </div>
+        </div>
+        <button type="button">Add more Education</button>
+    </form>
+</section>
+
+
 <!-- JavaScript file at the bottom -->
 <script src="script.js"></script>
 </body>
