@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Form</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
 
@@ -116,6 +117,102 @@
     </form>
 </section>
 
+
+<section id="job-requirements" >
+    <h2 style="margin-bottom: 20px;">Job Requirements</h2>
+    <form>
+        <div style="display: flex; flex-wrap: wrap; margin-bottom: 20px;">
+            <div style="flex: 1; min-width: 250px; padding: 15px; margin-right: 20px; background-color: #f8f8f8; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                <label style="display: block; margin-bottom: 10px;">
+                    <input type="checkbox" required>
+                    Are you able to lift up to 50 lbs?
+                </label>
+                <label style="display: block; margin-bottom: 10px;">
+                    <input type="checkbox" required>
+                    Can you work nights?
+                </label>
+                <label style="display: block; margin-bottom: 10px;">
+                    <input type="checkbox" required>
+                    Do you have a driver's license?
+                </label>
+                <label style="display: block; margin-bottom: 10px;">
+                    <input type="checkbox" required>
+                    Have you been cited for distracted driving or driving under the influence (DUI) in the past 3 years?
+                </label>
+            </div>
+            <div style="flex: 1; min-width: 250px; padding: 15px; margin-right: 20px; background-color: #f8f8f8; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                <label style="display: block; margin-bottom: 10px;">How many hours weekly can you work?</label>
+                <input type="text" placeholder="Enter hours" style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+
+                <label style="display: block; margin-bottom: 10px;">Date available to start</label>
+                <input type="date" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+
+                <label style="display: block; margin-bottom: 10px;">Driver's License Number</label>
+                <input type="text" placeholder="Enter License Number" style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+
+                <label style="display: block; margin-bottom: 10px;">State of Issue</label>
+                <select style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                    <option>Select state</option>
+                    <option>California</option>
+                    <option>Texas</option>
+                </select>
+            </div>
+            <div style="flex: 1; min-width: 250px; padding: 15px; background-color: #f8f8f8; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                <label style="display: block; margin-bottom: 10px;">Have you been fired from a job?</label>
+                <input type="checkbox" style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 10px;">If yes, please explain:</label>
+                <textarea placeholder="Explain here..." style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);"></textarea>
+
+                <label style="display: block; margin-bottom: 10px;">Expiration Date</label>
+                <input type="text" placeholder="mm/yy" style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+            </div>
+        </div>
+        <button type="submit" style="padding: 12px 20px; margin-top: 20px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer;">Submit</button>
+    </form>
+</section>
+
+
+<section id="background">
+    <h2>Background</h2>
+    <form>
+        <label>
+            <input type="checkbox" id="convicted">
+            Have you ever been convicted of a crime?
+        </label>
+        <div class="row">
+            <div class="col">
+                <label for="start-date">Date available to start:</label>
+                <input type="date" id="start-date">
+            </div>
+            <div class="col">
+                <label for="misdemeanor-felony">Misdemeanor/Felony:</label>
+                <select id="misdemeanor-felony">
+                    <option value="none">Select one</option>
+                    <option value="misdemeanor">Misdemeanor</option>
+                    <option value="felony">Felony</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="description">Description:</label>
+                <input type="text" id="description" placeholder="Description">
+            </div>
+            <div class="col">
+                <label for="confinement">Confinement/Probation/Community Service:</label>
+                <select id="confinement">
+                    <option value="none">Select one</option>
+                    <option value="confinement">Confinement</option>
+                    <option value="probation">Probation</option>
+                    <option value="community-service">Community Service</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="months-years">Months/Years:</label>
+                <input type="text" id="months-years" placeholder="Months/Years">
+            </div>
+        </div>
+        <button type="button">Add another conviction</button>
+    </form>
+</section>
 <!-- JavaScript file at the bottom -->
 <script src="script.js"></script>
 </body>
