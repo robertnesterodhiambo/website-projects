@@ -171,15 +171,14 @@
     </form>
 </section>
 
-
 <section id="background">
     <h2>Background</h2>
-    <form>
+    <form id="conviction-form">
         <label>
             <input type="checkbox" id="convicted">
             Have you ever been convicted of a crime?
         </label>
-        <div class="row">
+        <div class="row conviction-fields">
             <div class="col">
                 <label for="start-date">Date available to start:</label>
                 <input type="date" id="start-date">
@@ -210,57 +209,387 @@
                 <input type="text" id="months-years" placeholder="Months/Years">
             </div>
         </div>
-        <button type="button">Add another conviction</button>
+        <button type="button" id="add-conviction">Add another conviction</button>
     </form>
 </section>
+<script>
+    document.getElementById("add-conviction").addEventListener("click", function() {
+        // Create a new conviction section
+        const convictionDiv = document.createElement("div");
+        convictionDiv.classList.add("row", "conviction-fields");
+
+        // Add the fields for the new conviction
+        convictionDiv.innerHTML = `
+            <div class="col">
+                <label for="start-date">Date available to start:</label>
+                <input type="date" name="start-date">
+            </div>
+            <div class="col">
+                <label for="misdemeanor-felony">Misdemeanor/Felony:</label>
+                <select name="misdemeanor-felony">
+                    <option value="none">Select one</option>
+                    <option value="misdemeanor">Misdemeanor</option>
+                    <option value="felony">Felony</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="description">Description:</label>
+                <input type="text" name="description" placeholder="Description">
+            </div>
+            <div class="col">
+                <label for="confinement">Confinement/Probation/Community Service:</label>
+                <select name="confinement">
+                    <option value="none">Select one</option>
+                    <option value="confinement">Confinement</option>
+                    <option value="probation">Probation</option>
+                    <option value="community-service">Community Service</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="months-years">Months/Years:</label>
+                <input type="text" name="months-years" placeholder="Months/Years">
+            </div>
+            <div class="col">
+                <button type="button" class="remove-conviction">Remove</button>
+            </div>
+        `;
+
+        // Append the new conviction section to the form
+        document.getElementById("conviction-form").appendChild(convictionDiv);
+
+        // Add event listener to the remove button
+        convictionDiv.querySelector(".remove-conviction").addEventListener("click", function() {
+            convictionDiv.remove();
+        });
+    });
+</script>
 
 
 <!--Education-->
-
-
 <section id="education">
-    <h2>education</h2>
-    <form>
+    <h2>Education</h2>
+    <form id="education-form">
         <label>
-            <input type="checkbox" id="convicted">
-           Do you want to add education background?
+            <input type="checkbox" id="add-education">
+            Do you want to add education background?
         </label>
-        <div class="row">
+        <div class="row education-fields">
             <div class="col">
-                <label for="start-date">Graduation Date:</label>
-                <input type="date" id="start-date">
+                <label for="graduation-date">Graduation Date:</label>
+                <input type="date" id="graduation-date">
             </div>
             <div class="col">
-                <label for="misdemeanor-felony">School Type:</label>
-                <select id="misdemeanor-felony">
-                    <option value="none">College</option>
-                    <option value="misdemeanor">Highscool</option>
-                    <option value="felony"></option>
+                <label for="school-type">School Type:</label>
+                <select id="school-type">
+                    <option value="college">College</option>
+                    <option value="highschool">High School</option>
                 </select>
             </div>
             <div class="col">
-                <label for="description">School Name:</label>
-                <input type="text" id="description" placeholder="Description">
+                <label for="school-name">School Name:</label>
+                <input type="text" id="school-name" placeholder="School Name">
             </div>
-
             <div class="col">
-                <label for="confinement">State:</label>
-                <select id="confinement">
-                    <option value="none">Ohio</option>
-                    <option value="confinement">Newyork</option>
+                <label for="state">State:</label>
+                <select id="state">
+                    <option value="ohio">Ohio</option>
+                    <option value="newyork">New York</option>
                 </select>
             </div>
-            
             <div class="col">
-                <label for="months-years">Majors:</label>
-                <input type="text" id="months-years" placeholder="Months/Years">
+                <label for="majors">Majors:</label>
+                <input type="text" id="majors" placeholder="Majors">
             </div>
         </div>
-        <button type="button">Add more Education</button>
+        <button type="button" id="add-education-button">Add more Education</button>
     </form>
 </section>
 
+<script>
+    document.getElementById("add-education-button").addEventListener("click", function() {
+        // Create a new education section
+        const educationDiv = document.createElement("div");
+        educationDiv.classList.add("row", "education-fields");
 
+        // Add the fields for the new education entry
+        educationDiv.innerHTML = `
+            <div class="col">
+                <label for="graduation-date">Graduation Date:</label>
+                <input type="date" name="graduation-date">
+            </div>
+            <div class="col">
+                <label for="school-type">School Type:</label>
+                <select name="school-type">
+                    <option value="college">College</option>
+                    <option value="highschool">High School</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="school-name">School Name:</label>
+                <input type="text" name="school-name" placeholder="School Name">
+            </div>
+            <div class="col">
+                <label for="state">State:</label>
+                <select name="state">
+                    <option value="ohio">Ohio</option>
+                    <option value="newyork">New York</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="majors">Majors:</label>
+                <input type="text" name="majors" placeholder="Majors">
+            </div>
+            <div class="col">
+                <button type="button" class="remove-education">Remove</button>
+            </div>
+        `;
+
+        // Append the new education section to the form
+        document.getElementById("education-form").appendChild(educationDiv);
+
+        // Add event listener to the remove button
+        educationDiv.querySelector(".remove-education").addEventListener("click", function() {
+            educationDiv.remove();
+        });
+    });
+</script>
+
+
+<!--Expirience-->
+<section id="experience">
+    <h2>Experience</h2>
+    <form id="experience-form">
+        <div class="row experience-fields">
+            <div class="col">
+                <label for="employer">Employer Name</label>
+                <input type="text" id="employer" name="employer">
+            </div>
+            <div class="col">
+                <label for="street">Street Address</label>
+                <input type="text" id="street" name="street">
+            </div>
+            <div class="col">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+            </div>
+            <div class="col">
+                <label for="state">State</label>
+                <select id="state" name="state">
+                    <option value="">Select state</option>
+                    <!-- Add state options here -->
+                </select>
+            </div>
+            <div class="col">
+                <label for="zip">Zip Code</label>
+                <input type="text" id="zip" name="zip">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="phone">Mobile Phone Number</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="col">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="supervisor">Name of Last Supervisor</label>
+                <input type="text" id="supervisor" name="supervisor">
+            </div>
+            <div class="col">
+                <label for="last-title">Your Last Job Title</label>
+                <input type="text" id="last-title" name="last-title">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="start-date">Start Date</label>
+                <input type="date" id="start-date" name="start-date">
+            </div>
+            <div class="col">
+                <label for="end-date">End Date</label>
+                <input type="date" id="end-date" name="end-date">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="reason-leaving">Reason for Leaving</label>
+                <input type="text" id="reason-leaving" name="reason-leaving">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="duties">Duties Performed</label>
+                <textarea id="duties" name="duties" rows="4"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="contact-employer">
+                    <input type="checkbox" id="contact-employer" name="contact-employer">
+                    May we contact this employer?
+                </label>
+            </div>
+        </div>
+
+        <button type="button" id="add-experience-button">Add more Experience</button>
+    </form>
+</section>
+
+<script>
+    document.getElementById("add-experience-button").addEventListener("click", function() {
+        // Create a new experience section
+        const experienceDiv = document.createElement("div");
+        experienceDiv.classList.add("row", "experience-fields");
+
+        // Add the fields for the new experience entry
+        experienceDiv.innerHTML = `
+            <div class="col">
+                <label for="employer">Employer Name</label>
+                <input type="text" name="employer">
+            </div>
+            <div class="col">
+                <label for="street">Street Address</label>
+                <input type="text" name="street">
+            </div>
+            <div class="col">
+                <label for="city">City</label>
+                <input type="text" name="city">
+            </div>
+            <div class="col">
+                <label for="state">State</label>
+                <select name="state">
+                    <option value="">Select state</option>
+                    <!-- Add state options here -->
+                </select>
+            </div>
+            <div class="col">
+                <label for="zip">Zip Code</label>
+                <input type="text" name="zip">
+            </div>
+            <div class="col">
+                <label for="phone">Mobile Phone Number</label>
+                <input type="text" name="phone">
+            </div>
+            <div class="col">
+                <label for="email">Email Address</label>
+                <input type="email" name="email">
+            </div>
+            <div class="col">
+                <label for="supervisor">Name of Last Supervisor</label>
+                <input type="text" name="supervisor">
+            </div>
+            <div class="col">
+                <label for="last-title">Your Last Job Title</label>
+                <input type="text" name="last-title">
+            </div>
+            <div class="col">
+                <label for="start-date">Start Date</label>
+                <input type="date" name="start-date">
+            </div>
+            <div class="col">
+                <label for="end-date">End Date</label>
+                <input type="date" name="end-date">
+            </div>
+            <div class="col">
+                <label for="reason-leaving">Reason for Leaving</label>
+                <input type="text" name="reason-leaving">
+            </div>
+            <div class="col">
+                <label for="duties">Duties Performed</label>
+                <textarea name="duties" rows="4"></textarea>
+            </div>
+            <div class="col">
+                <label for="contact-employer">
+                    <input type="checkbox" name="contact-employer">
+                    May we contact this employer?
+                </label>
+            </div>
+            <div class="col">
+                <button type="button" class="remove-experience">Remove</button>
+            </div>
+        `;
+
+        // Append the new experience section to the form
+        document.getElementById("experience-form").appendChild(experienceDiv);
+
+        // Add event listener to the remove button
+        experienceDiv.querySelector(".remove-experience").addEventListener("click", function() {
+            experienceDiv.remove();
+        });
+    });
+</script>
+
+
+<!--acknowledgment-waiver-->
+<section id="acknowledgment">
+    <form>
+        <h2>Acknowledgment & Waiver</h2>
+        <p>
+            FOR UNFINISHED BUSINESS TO VIEW MY APPLICATION, I AGREE THAT:<br>            
+            APPLYING OR BEING HIRED FOR ANY JOB DOES NOT MEAN I HAVE A CONTRACT OR THE RIGHT TO KEEP THE JOB.<br>
+            NO EXISTING MATERIAL CAN CHANGE THIS.<br>
+            THESE CANNOT CHANGE THE EMPLOYMENT-AT-WILL NATURE OF THE JOB.<br>
+            ONLY THE PRESIDENT OR GENERAL MANAGER CAN CHANGE THIS IN WRITING.<br>
+            I OR UNFINISHED BUSINESS MAY END THE JOB AT ANY TIME FOR ANY REASON.<br>
+            IF HIRED, I KNOW THAT UNFINISHED BUSINESS MAY CHANGE BENEFITS, POLICIES, AND PROCEDURES, WHICH MAY REDUCE BENEFITS.<br>
+            I ALLOW THE COMPANY TO CHECK ALL THE INFORMATION IN MY APPLICATION.<br>
+            I KNOW THAT GIVING FALSE OR INCOMPLETE INFORMATION CAN BE A REASON FOR BEING FIRED AT ANY TIME WITH NO WARNING.<br>
+            I ALLOW UNFINISHED BUSINESS TO TALK TO SCHOOLS, PREVIOUS EMPLOYERS (UNLESS I SAY OTHERWISE), REFERENCES, AND MORE.<br>
+            I FREE UNFINISHED BUSINESS FROM ANY BLAME FOR DOING THESE CHECKS.
+        </p>
+        
+        <p>
+            I KNOW THAT:
+        </p>
+        <ol style="margin-left: 20px;">
+            <li style="text-indent: -15px; padding-left: 15px;">
+                UNFINISHED BUSINESS HAS A DRUG AND ALCOHOL POLICY THAT REQUIRES TESTING BEFORE AND AFTER HIRING.
+            </li>
+            <li style="text-indent: -15px; padding-left: 15px;">
+                I MUST AGREE TO TESTING TO GET THE JOB.
+            </li>
+            <li style="text-indent: -15px; padding-left: 15px;">
+                I HAVE TO PASS THE TESTS TO KEEP MY JOB.
+            </li>
+        </ol>
+        
+              
+        <p>
+            I KNOW THAT I HAVE TO PASS PHYSICAL TESTS RELATED TO THE JOB TO STAY HIRED.<br>
+            I KNOW THAT UNFINISHED BUSINESS MAY ASK FOR A BACKGROUND CHECK. THIS CAN INCLUDE LOOKING AT MY CREDIT, CHARACTER, 
+            REPUTATION, PERSONAL TRAITS, AND MODE OF LIVING.<br>
+            IF I ASK IN WRITING, UNFINISHED BUSINESS WILL GIVE ME MORE DETAILS ABOUT THE BACKGROUND CHECK. THIS IS REQUIRED BY THE FAIR CREDIT REPORTING ACT.<br>
+            I KNOW THAT I WILL BE ON PROBATION FOR 60 DAYS.<br>
+            I CAN BE FIRED FOR ANY REASON DURING OR AFTER THIS TIME.
+        </p>
+        
+        <p>
+        <div class="row">
+            <div class="col">
+                <label for="agreement">By clicking, I agree to the above</label>
+                <input type="checkbox" id="agreement" required>
+            </div>
+        </div>
+        </p>
+        <div class="row">
+            <div class="col">
+                <label for="signature">Signature</label>
+                <input type="text" id="signature" placeholder="Enter your signature" required>
+            </div>
+        </div>
+        <button type="submit">Submit Application</button>
+    </form>
+</section>
 <!-- JavaScript file at the bottom -->
 <script src="script.js"></script>
 </body>
