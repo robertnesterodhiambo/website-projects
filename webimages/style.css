@@ -56,6 +56,7 @@ section {
     min-height: 100vh; /* Ensure sections take up the full viewport height */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for sections */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Text shadow for section headers */
+    background-color: #d3d3d3;
 }
 
 h2 {
@@ -65,7 +66,7 @@ h2 {
 
 /* Form Styling */
 form {
-    background-color: #f8f8f8;
+    background-color: #d3d3d3;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Box shadow for the form */
